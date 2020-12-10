@@ -17,16 +17,17 @@ public class DespachadorDeEnviosTest {
     @Before
     public void init() {
         despachador.setRepositorioDeEnvios(repositorioDeEnvios);
+        System.setProperty("adicional_propina", "10");
     }
 
     @Test
-    public void conMenosDe5PaquetesElCostoDebeSer50() {
+    public void conMenosDe5PaquetesElCostoDebeSer60() {
         dadoQueTengo0Envios();
         dadoQueTengoUnEnvioConUnaCantidadDePaquetes(3);
 
         cuandoCalculoElCosto();
 
-        entoncesVerificoQueElCostoEs(Double.valueOf(50));
+        entoncesVerificoQueElCostoEs(Double.valueOf(60));
     }
 
     @Test

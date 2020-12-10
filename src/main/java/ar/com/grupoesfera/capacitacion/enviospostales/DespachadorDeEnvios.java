@@ -15,12 +15,16 @@ public class DespachadorDeEnvios {
 
         int cantidadDePaquetes = envio.getCantidadDePaquetes();
         if(cantidadDePaquetes < 5){
-            return Double.valueOf(50) * porcentajeDeAumento;
+            return (Double.valueOf(50) * porcentajeDeAumento) + getPropina();
         }
         else if(cantidadDePaquetes < 10){
             return Double.valueOf(80) * porcentajeDeAumento;
         }
         return Double.valueOf(cantidadDePaquetes * 15) * porcentajeDeAumento;
+    }
+
+    public Double getPropina(){
+        return Double.valueOf(System.getProperty("adicional_propina"));
     }
 
     public void setRepositorioDeEnvios(RepositorioDeEnvios repositorioDeEnvios) {
