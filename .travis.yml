@@ -1,5 +1,9 @@
 language : java
-stages:
-  - compile
-  - test
-  - deploy
+jobs:
+  include:
+    - stage: compile
+      script: mvn compile
+    - stage: test
+      script: mvn -Dadicional_propina=10 test
+    - stage: empaquetar
+      script: mvn package
