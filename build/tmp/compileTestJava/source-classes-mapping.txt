@@ -1,0 +1,8 @@
+ar/com/grupoesfera/capacitacion/enviospostales/AplicacionTest.java
+ ar.com.grupoesfera.capacitacion.enviospostales.AplicacionTest
+ar/edu/grupoesfera/enviospostales/modelo/CalculadorDeCostosDeEnvioTest.java
+ ar.edu.grupoesfera.enviospostales.modelo.CalculadorDeCostosDeEnvioTest
+ar/edu/grupoesfera/enviospostales/modelo/AsignadorDeTransporteTest.java
+ ar.edu.grupoesfera.enviospostales.modelo.AsignadorDeTransporteTest
+ar/edu/grupoesfera/enviospostales/modelo/DespachadorTest.java
+ ar.edu.grupoesfera.enviospostales.modelo.DespachadorTest
